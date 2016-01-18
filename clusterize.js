@@ -162,6 +162,11 @@
     self.updateRow = function(index, html) {
       rows[index] = html;
     }
+    self.walkRows = function(callback) {
+      for (var i=0,l=rows.length; i<l; i++){
+        rows[i] = callback.call(self, rows[i], i);
+      }
+    }
   }
 
   Clusterize.prototype = {

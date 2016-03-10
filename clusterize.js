@@ -167,6 +167,13 @@
         rows[i] = callback.call(self, rows[i], i);
       }
     }
+    self.eachRows = function(callback) {
+      for (var i=0,l=rows.length; i<l; i++){
+        if (callback.call(self, rows[i], i) === false) {
+          break;
+        }
+      }
+    }
   }
 
   Clusterize.prototype = {

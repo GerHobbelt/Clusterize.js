@@ -157,6 +157,9 @@
     self.prepend = function(rows) {
       add('prepend', rows);
     }
+    self.getRow = function(index) {
+      return rows[index];
+    }
     self.updateRow = function(index, html) {
       rows[index] = html;
     }

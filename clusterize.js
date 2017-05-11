@@ -259,7 +259,7 @@
         top_offset: top_offset,
         bottom_offset: bottom_offset,
         rows_above: rows_above,
-        rows: this_cluster_rows
+        rows: this.options.callbacks.prepareClusterRows ? this.options.callbacks.prepareClusterRows(this_cluster_rows) : this_cluster_rows
       }
     },
     renderExtraTag: function(class_name, height) {

@@ -3,7 +3,7 @@
  * @see https://developers.google.com/closure/compiler/docs/api-tutorial3
  * @externs
  */
-
+var module, define;
 var Clusterize = {
     "scroll_elem": {},
     "content_elem": {},
@@ -22,6 +22,10 @@ var Clusterize = {
     "update": function() {},
     "append": function() {},
     "prepend": function() {},
+    "getRow": function() {},
+    "updateRow": function() {},
+    "walkRows": function() {},
+    "eachRows": function() {},
     "refresh": function() {},
     "getRowsAmount": function() {},
     "getScrollProgress": function() {},
